@@ -125,7 +125,7 @@
     padding-top: 3em;
     padding-bottom: 2em;
     min-height: 40vh;
-    
+    background-image: url(../image/background_img.jpg);
   }
   section h1{
     font-family:  'Kdam Thmor Pro', sans-serif ;
@@ -161,24 +161,23 @@
   .sem-btn1:hover{
     background-color: rgb(74, 71, 71);
   }
-  
-  
   /*spacing b/w button*/
   .btn-space{
-    bottom: 3em;
+  bottom: 3em;
   padding: 45px;}
   .btn1-space{
-    padding: 30px;
+  padding: 30px;
   }
   
   .flex-align-left {
     margin-left: auto;
   }
+  
   .dropbttn {
     background-color:  rgb(32, 30, 30);
     color: white;
-    padding: 40px 200px;
-    font-size: 16px;
+    padding: 40px 250px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     border:none;
