@@ -31,7 +31,7 @@
     align-items: center;
     /*position: -webkit-sticky;
     position: sticky;
-    top:0;*/
+    top: 0;*/
   }
   
   /* Style the navigation bar links */
@@ -88,11 +88,13 @@
   text-decoration: none;
   display: block;
   text-align: left;
+  box-shadow: inset 0 0 0 0 #565252;
+  transition: ease-out 0.3s;
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  box-shadow: inset 400px 0 0 0 #ddd;
 }
 
 /* Show the dropdown menu on hover */
@@ -109,11 +111,10 @@
   }
   
   /* Main column */
-  main {
+  main{
     flex: 100%;
     /* Set the width of the main content */
-    background-color: white;
-    /* White background color */
+    background-image: url(../image/background_img.jpg);
   }
   
   /* every even section with grey color */
@@ -126,6 +127,7 @@
     height: 100%;
     padding: 75px 0px;
     min-height: 40vh;
+    
   }
   
   section h2 {
