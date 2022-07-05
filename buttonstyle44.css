@@ -1,0 +1,28 @@
+/* Style the top navigation bar */
+nav {
+  display: flex;
+  background-color: #333;
+  align-items: center;
+}
+
+/* Style the navigation bar links */
+nav .menu-btn {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+   box-shadow: inset 0 0 0 0 #565252; /*--->HERE--->add style to the nav bar buttons */
+  transition: ease-out 0.3s;
+}
+
+/* Change color on hover */
+nav .menu-btn:hover {
+  background-color: #ddd;
+  color: black;
+  box-shadow: inset 500px 0 0 0 #ddd; /*--->HERE--->add style to the nav bar buttons */
+}
+/* The dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+}
