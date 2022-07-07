@@ -1,4 +1,5 @@
 /*CSScode*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
   /* Deault CSS on all Elements */
   box-sizing: border-box;
@@ -25,20 +26,20 @@ header {
 }
 
 /* Style the top navigation bar */
-nav {
+nav ul{
   display: flex;
   background-color: #333;
   align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
 }
-
 /* Style the navigation bar links */
 nav .menu-btn {
   color: white;
   padding: 15px 20px;
   text-decoration: none;
   text-align: center;
-  
-}
+  }
 
 /* Change color on hover */
 nav .menu-btn:hover {
@@ -165,15 +166,86 @@ padding: 45px;}
 .flex-align-left {
   margin-left: auto;
 }
-@media screen and (max-width: 700px) {
-  footer,
-  .sm-handle,
-  nav {
-    flex-direction: column;
-    padding: 10px 0px;
-  }
+.menu-bar i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  background-color: black;
+  float: top left;
+ 
+}
 
-  .flex-align-left {
-    margin-left: 0;
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 920px) {
+  header {
+    text-align: left;
+    background-color: black;
+  }
+  .banner {
+    /* Backgroung banner GIF */
+    background-image: url(../CANSTUDY/image/canstudylogo.gif);
+    height: 80px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 70% 17% ;
+  }
+  nav .menu-bar i{
+      display: block;
+    }
+    #click:checked ~ .menu-bar i:before{
+      content: "\f00d";
+      }
+    nav ul{
+      position: fixed;
+      top: 100px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      display: block flow;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav .menu-btn:hover {
+      background-color: rgb(16, 16, 16);
+      color: cyan;
+    }
+    .dropdown:hover .dropbtn {
+      color: cyan;
+      background-color: rgb(16, 16, 16);
+    }
+    .branch img {
+      margin: 5px;
+      box-shadow: 8px 8px 12px 2px rgba(0, 0, 0, 0.475);
+      height: 50%;
+      width: 50%;
+    }
+    .branch {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    }
+    footer,
+    .sm-handle,
+    nav {
+      flex-direction: column;
+      padding: 10px 0px;
+    }
+    .flex-align-left {
+      margin-left: 0;
   }
 }
