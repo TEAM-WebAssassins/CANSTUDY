@@ -290,8 +290,8 @@
         content: "\f00d";
         }
       nav ul{
-        position: fixed;
-        top: 192px;
+        position: absolute;
+        top: 140px;
         left: -100%;
         background: #111;
         width: 100%;
@@ -312,6 +312,13 @@
       nav .menu-btn:hover {
         background-color: rgb(16, 16, 16);
         color: cyan;
+      }
+      .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       }
       .dropdown:hover .dropbtn {
         color: cyan;
