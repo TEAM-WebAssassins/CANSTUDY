@@ -21,8 +21,7 @@ header {
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 40% 40% ;
-  
+  background-size: 40% 40% ; 
 }
 
 /* Style the top navigation bar */
@@ -36,6 +35,7 @@ nav ul{
     position: sticky;
     top: 0;*/
 }
+
 /* Style the navigation bar links */
 nav .menu-btn {
   color: white;
@@ -116,14 +116,13 @@ nav .logo {
 main {
   flex: 100%;
   /* Set the width of the main content */
-  background-color: white;
+  background-image: url(../CANSTUDY/image/background1.jpg);
   /* White background color */
 }
 
 /* every even section with grey color */
-section:nth-child(odd) {
-  background-color: #f7f7f7;
-  background-image: url(../CANSTUDY/image/background1.jpg);
+section:nth-child(even) {
+  background-color: #f3f0f0;
 }
 
 section {
@@ -132,11 +131,162 @@ section {
   padding-top: 3em;
   padding-bottom: 2em;
   min-height: 40vh;
+  }
+ 
+  /*founder section*/
+  .background ,.our_founder{
+    text-align: center;
+    height: 100%;
+    padding: 75px 0px;
+    min-height: 40vh;
+    
+  }
   
+  /*spacing b/w side-heading*/
+  .background h2 ,.our_founder h2 {
+    margin-bottom: 50px;
+  }
+  
+  /*styling of side-heading*/
+  section h2 span {
+    padding: 10px 55px;
+    /*border-radius: 20px;*/
+    color:#fff;
+    background: #120f5e;
+    /* fallback for old browsers */
+    background:  linear-gradient(0deg, rgba(40,23,150,1) 0%, rgba(37,34,34,1) 100%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    border-radius: 5px;
+  }
+
+  /*styling for branch img*/
+  .branch img {
+    margin: 5px;
+    box-shadow: 8px 8px 12px 2px rgba(0, 0, 0, 0.475);
+    /*height: 50%;
+    width: 50%;*/
+  }
+  .branch img:hover {
+    border: 10px solid rgb(158, 154, 154);
+    border-radius: 3px;
+  }
+
+  /*spacing b/w department-title*/
+  section h3 {
+    padding-top: 4px;
+    padding-bottom:15px ;
+    }
+
+  /*profile section*/
+  .profile_name {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+  }
+  .profile_img{
+    border-radius:90px;
+  }
+  .about_title {
+    font-size: 1.45em;
+    padding: 0px 10px;
+    color: #120f5e;
+  }
+  .founder {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+/* social media logo styling*/ 
+.sm-handle {
+  display: flex;
+  justify-content: center;
 }
-section h1{
+.sm-handle a {
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 5px 10px;
+  background-color: rgb(125 125 125 / 25%);
+  text-decoration: none;
+}
+.sm-handle a:hover {
+  background-color: rgb(30 30 30 / 25%);
+}
+.sm-handle a i {
+  margin: 5px;
+}
+/*youtube*/
+.yt_handle {
+    color: #e62117;
+  }
+  /*linkedin*/
+  .linkdn_handle {
+    color: #0e76a8;
+  }
+  /*instagram*/
+  .insta_handle {
+    color: #dd2a7b;
+  }
+  /*bottom spacing b/w social media*/
+  .about_us {
+    margin: 50px;
+  }
+  
+  /*footer section*/
+  footer {
+    display: flex;
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: black;
+    /* Dark background color */
+  }
+  footer a {
+    float: left;
+    /* Make sure that the links stay side-by-side */
+    display: block;
+    /* Change the display to block, for responsive reasons (see below) */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center the text */
+    padding: 14px 20px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline */
+  }
+  .copyright {
+    color: #fff;
+    /* to align item to left */
+    margin-left: auto;
+    padding-right: 15px;
+  }
+  .flex-align-left {
+    margin-left: auto;
+  }
+
+ /*menu-bar in mobile view*/
+ .menu-bar i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  background-color: black;
+  float: top left;
+  padding-left: 7px;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+/*--------page2 button styling-----------*/
+
+section h1 span{
   font-family:  'Kdam Thmor Pro', sans-serif ;
-  font-size: 1.7em;
+  font-size: 1em;
 }
 .sem-btn{
   background-color: rgb(32, 30, 30);
@@ -178,6 +328,7 @@ padding: 45px;}
 .dropdown1 {
   position: relative;
   display: inline-block;
+  background-color: #606060;
 }
 
 .dropdown-content1 {
@@ -200,7 +351,7 @@ padding: 45px;}
 }
 
 .dropdown-content1 a:hover {
-  background-color: #a29898
+  background-color: #a29898;
 }
 
 .dropdown1:hover .dropdown-content1 {
@@ -210,22 +361,9 @@ padding: 45px;}
 .dropdown1:hover .dropbttn {
   background-color: black;
 }
-.flex-align-left {
-  margin-left: auto;
-}
-.menu-bar i{
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-  background-color: black;
-  float: top left;
- 
-}
 
-input[type="checkbox"]{
-  display: none;
-}
+/*-------------moblie view-------------*/
+
 @media (max-width: 920px) {
   header {
     text-align: left;
@@ -241,6 +379,7 @@ input[type="checkbox"]{
     background-repeat: no-repeat;
     background-size: 50% 18.3% ;
   }
+  /*menu bar in moblie view*/
   nav .menu-bar i{
       display: block;
     }
@@ -257,7 +396,7 @@ input[type="checkbox"]{
       transition: all 0.3s ease;
     }
     #click:checked ~ ul{
-      left: 0;
+      left: 0 ;
     }
     nav ul li{
       width: 100%;
@@ -274,6 +413,45 @@ input[type="checkbox"]{
     .dropdown:hover .dropbtn {
       color: cyan;
       background-color: rgb(16, 16, 16);
+    }
+    .dropdown-content {
+      display: none;
+      position: relative;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a:hover {
+      box-shadow: inset 400px 0 0 0 #ddd;
+      color: black;
+    }
+    .dropdown-content1 a {
+     color: rgb(255, 255, 255);
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     background-color: #0e0e0e;
+    }
+
+    .dropdown-content1 a:hover {
+     background-color: #4d4a4a;
+     }
+
+    .dropdown1:hover {
+     background-color:  rgb(33, 32, 32);
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      box-shadow: inset 0 0 0 0 #565252;
+      transition: ease-out 0.3s;
     }
     .sem-btn{
       background-color: rgb(32, 30, 30);
@@ -319,12 +497,29 @@ input[type="checkbox"]{
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
+    /*branch img styling*/
+    .branch img {
+      margin: 3px;
+      box-shadow: 8px 8px 12px 2px rgba(0, 0, 0, 0.475);
+      height: 10em;
+      width: 17em;
+    }
+    .branch {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    }
+    .branch img :hover {
+      border: 3px solid rgb(158, 154, 154);
+      border-radius: 2px;
+    }
+   /*footer*/
     footer,
     .sm-handle,
     nav {
       flex-direction: column;
       padding: 10px 0px;
     }
+    /*copyright will be align to right*/
     .flex-align-left {
       margin-left: 0;
   }
