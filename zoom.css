@@ -1,0 +1,10 @@
+.branch img {
+    margin: 5px;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+  .branch img:hover {
+    border-radius: 5px;
+    transform: scale(1.1);
+    z-index: 2;
+  }
