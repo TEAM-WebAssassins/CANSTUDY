@@ -2,7 +2,7 @@
 $email = $_POST['email'];
 $password = $_POST['password'];
 $branch_type = $_POST['branch_type'];
-$conn = new mysqli("127.0.0.1:3308","root","","canstudy");
+$conn = new mysqli("localhost","root","","canstudy");
 if($conn->connect_error){
     die("Failed to connect :".$conn->connect_error);
 } else {

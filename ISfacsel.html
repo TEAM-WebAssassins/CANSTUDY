@@ -4,130 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon for website -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/Project/favicon_io (1)/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Project/favicon_io (1)/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Project/favicon_io (1)/favicon-16x16.png">
-    <link rel="manifest" href="/Project/favicon_io (1)/site.webmanifest">
-
-    <title>IS| Faculty/student Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (1)\android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (1)\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>CANSTUDY | CS</title>
     <!-- Linking Fontawesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="/Project/style44.css">
+    <link rel="stylesheet" href="style44_page2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <body>
-        <!-- >>>Change the header bg and add the gif remove the text -->
-          <header>
-            <div class="banner"></div>
-
-            <!-- Navigation Bar -->
-            <nav>
-                <!-- >>>Change Home with the logo -->
-                <a href="#">
-                    <img class="logo" src="/Project/favicon_io (1)/favicon.ico" alt="Logo CANstudy">
-                </a>
-                <a class="menu-btn" href="/Project/first_code.html"><b>Home</b></a>
-                <div class="dropdown">
-                    <button class="dropbtn"><b>Study Material</b>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="/Project/page2semIS.html">Information Science &amp; Engineering</a>
-                        <a href="/Project/page2semCS.html">Computer Science &amp; Engineering</a>
-                        <a href="/Project/page2semEC.html">Electronics &amp; Communication Engineering</a>
-                        <a href="/Project/page2semMECH.html">Mechanical Engineering</a>
-                        <a href="#">Artificial Intelligence &amp; Machine Learning</a>
-                        <a href="#">Computer Science &amp; Design</a>
-                        <a href="/Project/page2semCSB.html">Computer Science &amp; Business Systems</a>
-                        <a href="/Project/page2cycle.html">Science &amp; Humanities</a>
-                    </div>
+<body ng-app="">
+  <div ng-include="'ISfacsel.html'"></div>
+  <header>
+      <!-- Navigation Bar -->
+        <nav>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-bar">
+            <i class="fas fa-bars"></i>
+          </label>
+          <!-- >>>Change the header bg and add the gif remove the text -->
+              <div class="banner"></div>
+            <ul>
+            <!-- >>>Change Home with the logo -->
+            <li><a href="#">
+                <img class="logo" src="image\canlogo.png" alt="Logo CANstudy">
+            </a>
+            </li>
+            <li><a class="menu-btn" href="index.html"><i class="fa fa-fw fa-home"></i><b> Home</b></a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><b>Study Material</b>
+                  <i class="fa fa-caret-down"></i></b>
+                </button>
+                <div class="dropdown-content">
+                  <a href="IS_page2.html">Information Science &amp; Engineering</a>
+                  <a href="CS_page2.html">Computer Science &amp; Engineering</a>
+                  <a href="EC_page2.html">Electronics &amp; Communication Engineering</a>
+                  <a href="MEC_page2.html">Mechanical Engineering</a>
+                  <a href="AI_page2.html">Artificial Intelligence &amp; Machine Learning</a>
+                  <a href="CSD_page2.html">Computer Science &amp; Design</a>
+                  <a href="CSB_page2.html">Computer Science &amp; Business Systems</a>
+                  <a href="SH_page2.html">Science &amp; Humanities</a>
                 </div>
-                <a class="menu-btn"
-                    href="https://www.careers360.com/colleges/canara-engineering-college-mangalore/reviews"><b>College
-                        Reviews</b></a>
-                <a class="menu-btn"
-                    href="https://www.justcrackinterview.com/20-most-common-interview-questions-and-answers-asked-in-every-interview/"><b>Interview
-                        Prep</b></a>
-                <a class="menu-btn" href="https://vtucalculator.online/vtu-sgpa-calculator"><b>Cgpa And Sgpa
-                        Calculator</b></a>
-                <a class="menu-btn flex-align-left" href="https://www.canaraengineering.in/contact-us"><b>Contact
-                        Us</b></a>
-            </nav>
+              </div>
+              <li><a class="menu-btn" href="https://www.careers360.com/colleges/canara-engineering-college-mangalore/reviews" target="_blank"><b>College Reviews</b></a></li>
+              <li><a class="menu-btn" href="https://www.justcrackinterview.com/20-most-common-interview-questions-and-answers-asked-in-every-interview/" target="_blank"><b>Interview Prep</b></a></li>
+              <li><a class="menu-btn" href="https://www.markcalculator.in/sgpamain.html" target="_blank"><b>Cgpa And Sgpa Calculator</b></a></li>
+              <li><a class="menu-btn" href="https://www.canaraengineering.in/contact-us" target="_blank"><i class="fa fa-fw fa-envelope"></i><b>Contact Us</b></a></li>
+              </li>
+        </nav>
         </header>
         <main>
             <section>
-                <h1><span>Choose your subjects</span></h1>
+              <h1><span>Choose your subjects</span></h1>
+              <div class="container mt-5 mb5">
+                <select class="form-control sem selectFilter" id="cas_dropdown" data-target="subject">
+                    <option value="-1" >-- SEM --</option>
+                    <option data-ref="sem3">Sem 3</option>
+                    <option data-ref="sem4">Sem 4</option>
+                    <option data-ref="sem5">Sem 5</option>
+                    <option data-ref="sem6">Sem 6</option>
+                    <option data-ref="sem7">Sem 7</option>
+                    <option data-ref="sem8">Sem 8</option>
+                </select>
                 <br>
                 <br>
-
-                <h3>3rd Sem</h3>
-                <br>
-                <br>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  MAT</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  DS</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  DMS</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  CO</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  ADE</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  SE</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  KAN</b></a>
-        <div class="btn1-space"></div>
-                <h3>4th Sem</h3>
-                <br>
-                <br>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  MAT</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  MCES</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  DAA</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  OS</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  OOC</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  DC</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  CIP</b></a>
-        <div class="btn1-space"></div>
-                <h3>5th Sem</h3>
-                <br>
-                <br>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  ME</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  CNS</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  DBMS</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  ATC</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  ADP</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  UP</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  ES</b></a>
-        <div class="btn1-space"></div>
-           
-                <h3>6th Sem</h3>
-                <br>
-                <br>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  FS</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  ST</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  WTA</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  PE1</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  O-ELA</b></a>
-        <div class="btn1-space"></div>
-                <h3>7th Sem</h3>
-                <br>
-                <br>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  AIML</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  BDA</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  PE2</b></a>
-        <div class="btn1-space"></div>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  PE3</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  O-ELB</b></a>
-        <div class="btn1-space"></div>
-                <h3>8th Sem</h3>
-                <br>
-                <br>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  IOT</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  PE4</b></a>
-        <a class="sem-btn" ><input type="checkbox"  required><b>  TS</b></a>
-        <div class="btn1-space"></div>
+                <select class="form-control subject selectFilter" id="cas_dropdown">
+                    <option value="-1">-- Select Sub --</option>
+                    <option data-ref="M1" data-belong="sem3">MAT</option>
+                    <option data-ref="DS" data-belong="sem3">DS</option>
+                    <option data-ref="DMS" data-belong="sem3">DMS</option>
+                    <option data-ref="CO" data-belong="sem3">CO</option>
+                    <option data-ref="ADE" data-belong="sem3">ADE</option>
+                    <option data-ref="SE" data-belong="sem3">SE</option>
+                    <option data-ref="KAN" data-belong="sem3">KAN</option>
+                    <option data-ref="M2" data-belong="sem4">MAT</option>
+                    <option data-ref="MCES" data-belong="sem4">MCES</option>
+                    <option data-ref="DAA" data-belong="sem4">DAA</option>
+                    <option data-ref="OS" data-belong="sem4">OS</option>
+                    <option data-ref="OOC" data-belong="sem4">OOC</option>
+                    <option data-ref="DC" data-belong="sem4">DC</option>
+                    <option data-ref="CIP" data-belong="sem4">CIP</option>
+                    <option data-ref="M3" data-belong="sem5">MAT</option>
+                    <option data-ref="CNS" data-belong="sem5">CNS</option>
+                    <option data-ref="DBMS" data-belong="sem5">DBMS</option>
+                    <option data-ref="ATC" data-belong="sem5">ATC</option>
+                    <option data-ref="AOP" data-belong="sem5">AOP</option>
+                    <option data-ref="UP" data-belong="sem5">UP</option>
+                    <option data-ref="ES" data-belong="sem5">ES</option>
+                </select>
+        
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="selectFilter.min.js"></script>
     </body>
     </html>
