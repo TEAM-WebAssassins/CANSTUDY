@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@800S&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Merriweather&family=Nunito+Sans:wght@300&family=Oswald&family=Playfair+Display:wght@400;500&family=Prompt:wght@300&family=Roboto+Slab&display=swap');
 * {
     /* Deault CSS on all Elements */
     box-sizing: border-box;
@@ -21,7 +20,7 @@ body {
     right: 0;
     width: 50%;
     height: 100%;
-    background: black url(./image/canstudylogo.gif);
+    background: black url(../canstudy2/image/canstudylogo.gif);
     background-size: 75% 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,7 +32,7 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
-    background:black url(./image/canstudylogo.gif);
+    background:black url(../image/canstudylogo.gif);
     background-size: 75% 40%;
     background-repeat: no-repeat;
     background-position: center;  
@@ -91,7 +90,7 @@ body {
     color: rgb(0, 0, 0);
     font-weight: 300;
     font-size: 35px;
-    font-family: 'Albert Sans', sans-serif;;
+    font-family: 'Arima', cursive;
   }
   
   button {
@@ -121,22 +120,11 @@ body {
     color: black;
     box-shadow: none;
   }
-  /*.close{
-    background: none;
-    color:rgb(43, 73, 43);
-    float: right;
-    box-shadow: none;
-  }
-  .close:hover{
-    background: rgb(212, 249, 212);
-    color:rgb(43, 73, 43);
-    box-shadow: none;
-  }*/
+  
   .right .off:hover {
     background: rgb(163, 163, 163);
     color: black;
     box-shadow: none;
-    text-transform: uppercase;
   }
   .left .off:hover {
     background: rgb(163, 163, 163);
@@ -171,6 +159,9 @@ body {
 .pass:hover a{
   text-decoration: underline;
 }
-.usn{
-  text-transform: uppercase;
+.login_btn{
+  color:white;
+  background-color: black;
+  text-decoration: none;
+
 }

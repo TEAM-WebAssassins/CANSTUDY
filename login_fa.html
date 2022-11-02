@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.jS"></script>
+    <!-- Icon for website -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (1)\android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (1)\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (1)\favicon-16x16.png">
+    <link rel="manifest" href="favicon_io (1)\site.webmanifest">
+    <title>CANSTUDY</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="login.js"></script>
     <link rel="stylesheet" href="login.css">
 </head>
-<body> 
+<body>
+    
+    
 <div id="back">
     <div class="backRight"></div>
         <div class="backLeft"></div>
@@ -17,40 +24,58 @@
         <div class="left">
             <div class="content">
                 <h2>Faculty Signup</h2>
-                <form method="post" onsubmit="return false;">
-                    <div class="form-group">
-                        <input type="text"placeholder="Full name*" required>
-                        <input type="text" placeholder="Mobile number*" required>
-                        <input type="text" placeholder="Email*" required>
-                        <div class="field space">
-                            <input type="password" class="pass-key"  placeholder="Password*" required>
-                            <span class="show"></span>
+                <form action="fa_connect.php" method="post">
+                <div class="form-group">
+                    <input type="text" required  placeholder="Full name*" name="username" />
+                    <input type="text" class="Faculty_Id" required placeholder="Faculty_Id*" id="Faculty_Id" pattern="0120+[0-9]{6}" name="Faculty_Id"  oninvalid="this.setCustomValidity('Pls enter valid Faculty_Id')"
+                        oninput="this.setCustomValidity('')"/>
+                    <input type="tel" id="phone" required placeholder="Mobile number*" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone" />
+                    <input type="email" required placeholder="Email*" name="email" id="email" pattern="[a-z0-9._%+-]+@canaraengineering.in" oninvalid="this.setCustomValidity('Enter College Mail ID')"
+                    oninput="this.setCustomValidity('')" />
+                    <div class="field space">
+                        <input type="password" class="pass-key" required placeholder="Password*" name="password" />
+                        <span class="show"></span>
+                        <br>
+                        <br>
+                            <br>
+                            <p>Branch Type: 
+            <select name="branch_type" id="branch_type"required>
+                <option value="">--Select a branch--</option>
+                <option value="ISE">ISE</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">ME</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="CSD">CSD</option>
+                <option value="CSB">CSB</option>
+            </select>
+            </p>
+            <br>
                         </div>
                     </div>
                     <div class="form-group"></div>
                     <div class="form-group"></div>
                      <div class="form-group"></div>
-                </form>
                 <button id="goLeft" class="off">Login</button>
-                <button>Sign up</button>
+                <button  id="Signup" type="submit">Sign up</button>
             </div>
         </div>
+    </form>
         <div class="right">
             <div class="content">
                 <h2>Faculty Login</h2>
-                <form method="post" onsubmit="return false;">
+                <form action="fa_login.php" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Email"/>
-                        <div class="field space">
-                            <input type="password" class="pass-key" required placeholder="Password"/>
+                        <input type="text" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@canaraengineering.in" name="email" oninvalid="this.setCustomValidity('Enter Valid College Mail ID')"
+                        oninput="this.setCustomValidity('')" />
+                        <div class="form-group">
+                            <input type="password" class="pass-key" required placeholder="Password" name="password"/>
                             <span class="show"></span>
                         </div>
                     </div>
-                    <div class="pass">
-                        <a href="#">Forget password?</a>
-                    </div>
                     <button id="goRight" class="off">Sign up</button>
                     <button id="login" type="submit">Login</button>   
+                    <br> 
             </div>
         </div>
     </div>
