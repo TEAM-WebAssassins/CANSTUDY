@@ -24,7 +24,7 @@ header {
 
 .banner {
   /* Backgroung banner GIF */
-  background-image: url(../canstudy2/image/canstudylogo.gif);
+  background-image: url(./image/canstudylogo.gif);
   height: 18vw;
   min-height: 30px;
   background-attachment: fixed;
@@ -614,7 +614,7 @@ padding: 45px;}
   
   .banner {
     /* Backgroung banner GIF */
-    background-image: url(../canstudy2/image/canstudylogo.gif);
+    background-image: url(./image/canstudylogo.gif);
     height: 90px;
     width: 90%;
     background-attachment: fixed;
