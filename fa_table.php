@@ -144,7 +144,7 @@
                                         </div>
                                         <div class="form-group">
                                         <label>Module 1</label>
-                                            <input type="file" name="module1"  accept=".pdf"  placeholder="">
+                                        <input type="text" name="module1" class="" placeholder="">
                                         </div>
                                         <div class="form-group">
                                         <label>Module 2</label>

@@ -2,74 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon for website -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (1)\android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (1)\favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (1)\favicon-16x16.png">
     <link rel="manifest" href="favicon_io (1)\site.webmanifest">
-    <title>CANSTUDY</title>
-    <!-- Linking Fontawesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="style44_page2.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANSTUDY | Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-   <!---- <div class="loader"></div>
-    <div class="content">
-        <div class="sun">
-            <div class="shadow"></div>
-        </div>-->
-  <header>
-      <!-- Navigation Bar -->
-        <nav>
-          <input type="checkbox" id="click">
-          <label for="click" class="menu-bar">
-            <i class="fas fa-bars"></i>
-          </label>
-          <!-- >>>Change the header bg and add the gif remove the text -->
-              <div class="banner"></div>
-            <ul>
-            <!-- >>>Change Home with the logo -->
-            </li>
-            <li><a class="menu-btn" href="index.html"><i class="fa fa-fw fa-home"></i><b>Home</b></a></li>
-            
-            <li><a class="menu-btn" href="https://www.careers360.com/colleges/canara-engineering-college-mangalore/reviews" target="_blank"><b>Institute Reviews</b></a></li>
-            <li><a class="menu-btn" href="https://www.justcrackinterview.com/20-most-common-interview-questions-and-answers-asked-in-every-interview/" target="_blank"><b>Interview Prep</b></a></li>
-            <li><a class="menu-btn" href="https://www.markcalculator.in/sgpamain.html" target="_blank"><b>Mark Calculator</b></a></li>
-              <li><a class="menu-btn" href="https://www.canaraengineering.in/contact-us" target="_blank"><i class="fa fa-fw fa-envelope"></i><b>Contact Us</b></a></li>
-              </li>
-        </nav>
-    </header>
-    <main>
-        <section class="background">
-            <h2><span>Department</span></h2>
-            <br>
-            <!-- Courses Carousel -->
-            <div>
-            <a class="branch" href="index_pre.html"><img src="image\pri.jpg" alt="" width="26%" height="22%"></a>
-            <h3>Primary school</h3></div>
-            <a class="branch" href="high_prim.html"><img src="image/middleschool.jpg" alt="" width="26%" height="22%"></a> 
-            <h3>High primary</h3>
-            <a  class="branch" href="high_school.html"><img src="image/high.jpg" alt="" width="26%" height="24%"></a> 
-            <h3>High School</h3>
-            <a  class="branch" href="pre-uni.html"><img src="image/pre.jpg" alt="" width="26%" height="24%"></a> 
-            <h3>Pre university</h3>
-            <a class="branch" href="UG.html"><img src="image/engg.jpg" alt="" width="26%" height="22%"></a>
-            <h3>Under graduate</h3>
-           
-        </section>
-        
-    </main>
-    <footer>
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#" class="flex-align-left">&copy; 2022 | CANSTUDY </a>
-    </footer>
+    
+    
+<div id="back">
+    <div class="backRight"></div>
+        <div class="backLeft"></div>
+    </div>
+<div id="slideBox">
+    <div class="topLayer">
+        <div class="left">
+            <div class="content">
+                <h2>CANSTUDY</h2>
+                <form action="connect.php" method="post">
+                <div class="form-group">
+                    <input type="text" required placeholder="Full name*" name="username" />
+                    <input type="tel" id="phone" required placeholder="Mobile number*" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone" />
+                    <input type="email" required placeholder="Email*" name="email" id="email" oninvalid="this.setCustomValidity('Enter College Mail ID')"
+                    oninput="this.setCustomValidity('')" />
+                    <div class="field space">
+                        <input type="password" class="pass-key" required placeholder="Password*" name="password" />
+                        <span class="show"></span>
+                        <br>
+                        <br>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="form-group"></div>
+                     <div class="form-group"></div>
+                <button id="goLeft" class="off">Login</button>
+                <button  id="Signup" type="submit">Sign up</button>
+            </div>
+        </div>
+    </form>
+        <div class="right">
+            <div class="content">
+                <h2>CANSTUDY</h2>
+                <form action="login.php" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" id="email"  name="email" oninvalid="this.setCustomValidity('Enter Valid College Mail ID')"
+                        oninput="this.setCustomValidity('')" />
+                        <div class="form-group">
+                            <input type="password" class="pass-key" required placeholder="Password" name="password"/>
+                            <span class="show"></span>
+                        </div>
+                    </div>
+                    <button id="goRight" class="off">Sign up</button>
+                    <button id="login" type="submit">Login</button>   
+                    <br> 
+            </div>
+        </div>
+    </div>
+</div>
+   
 </body>
 </html>

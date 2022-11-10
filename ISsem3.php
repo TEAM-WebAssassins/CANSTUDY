@@ -70,12 +70,20 @@
                     <button class="dropbttn" href="#">MAT(18MAT31)</a>
                         <i class="fa fa-caret-right"></i>
                         <div class="dropdown-content1">
-                            <a href="<?php echo $row['module1']; ?>">Module 1</a>
+                        <?php<a href="$row['module1']; ">Module 1</a>?>
                             <a href="#">Module 2</a>
                             <a href="#">Module 3</a>
                             <a href="#">Module 4</a>
                             <a href="#">Module 5</a>
                         </div>
+                        <?php
+                    }
+                }
+                else
+                {
+                    echo "No Record Found";
+                }
+                ?>
                 </div>
                 <div class="btn1-space"></div>
                 <div class="dropdown1">
